@@ -1,7 +1,6 @@
 <!DOCTYPE HTML> 
 <html>
 <head>
-
 <style>
 table, td, th
 {
@@ -12,12 +11,10 @@ border-collapse:collapse;
 }
 table 
 { margin: auto; }
-
 </style>
 </head>
 
 <body>
-
 <table>
 <tr><th colspan="4"> SIMPLE CALCULATOR </th></tr> 
 <tr>
@@ -37,16 +34,13 @@ table
 	<td> <input type="text" id="answer" value="" /></td>
     <td colspan="2"><input type="button" value="CLEAR ALL" onclick="cls()"/></td> 
 </tr>
-
 </table>
 
 <script type="text/javascript">
-
 function calc(clicked_id)
 {
 var val1 = parseFloat(document.getElementById("value1").value);
 var val2 = parseFloat(document.getElementById("value2").value);
-
 if(isNaN(val1)||isNaN(val2))
 	alert("ENTER VALID NUMBER");
 else if(clicked_id=="add")
